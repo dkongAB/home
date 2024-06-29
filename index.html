@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="paramDkong/css/styles.css"/>
-		<title>
+		<title id="titre">
                         Cookies | Donkey Kong
 		</title>
-		<script async>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script>
 			if(navigator.browserLanguage)
  {
  var language = navigator.browserLanguage ;
@@ -14,11 +15,11 @@
   }
 if(!language.indexOf('fr') > -1)
  {
-   document.getElementsByTagName("title").innerHTML="Language Error | Donkey Kong";
+   document.getElementById("titre").innerHTML="Language Error | Donkey Kong";
   }
 		</script>
 	</head>
-	<body><div align="center">
+	<body id="body"><div align="center">
 		<script async>if(navigator.browserLanguage)
  {
  var language = navigator.browserLanguage ;
@@ -29,6 +30,6 @@ if(language.indexOf('fr') > -1)
  {
  window.location.href="https://dkongab.github.io/cookies/";
   } else {
- document.getElementsBytagName("body").innerHTML="The website does not currently exist in your language. We apologize for the inconvenience.";
+ document.getElementById("body").innerHTML="The website does not currently exist in your language. We apologize for the inconvenience.";
   }</script>
 	</div></body></html>
