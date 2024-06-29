@@ -1,19 +1,34 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Language Error | Donkey Kong</title>
-	</head>
-	<body>
-		The website does not currently exist in your language. We apologize for the inconvenience.
-	</body>
-</html>
-<html lang="fr">
-	<head>
 		<link rel="stylesheet" href="paramDkong/css/styles.css"/>
 		<title>
                         Cookies | Donkey Kong
 		</title>
+		<script async>
+			if(navigator.browserLanguage)
+ {
+ var language = navigator.browserLanguage ;
+  } else {
+ var language = navigator.language ;
+  }
+if(!language.indexOf('fr') > -1)
+ {
+   document.getElementByTagName("title").innerHTML="Language Error | Donkey Kong";
+  }
+		</script>
 	</head>
 	<body><div align="center">
-		<script async>window.location.href="https://dkongab.github.io/cookies/";</script>
+		<script async>if(navigator.browserLanguage)
+ {
+ var language = navigator.browserLanguage ;
+  } else {
+ var language = navigator.language ;
+  }
+if(language.indexOf('fr') > -1)
+ {
+ window.location.href="https://dkongab.github.io/cookies/";
+  } else {
+ docoment.getElementBytagName("body").innerHTML="The website does not currently exist in your language. We apologize for the inconvenience.";
+  }</script>
 	</div></body></html>
